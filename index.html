@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ryan Urbach</title>
+</head>
+<body>
+  <div id="text">
+    Hello, my name is Ryan.
+  </div>
+  <div id="text2">
+    I am a front end developer.
+  </div>
+  <script type="text/javascript" src="js/ryan.js"></script>
+  <script type="text/javascript">
+    (function(){
+      var sequence = [
+            {
+              element: '#text',
+              timingArray: [200, 600, 100, 100, 200]
+            },
+            {
+              element: '#text2',
+              timingArray: [500, 0, 0, 0, 0, 100, 0]
+            }
+          ]
+        , ruSite = new RUsite;
+
+      ruSite.sequencer(sequence);
+    })();
+  </script>
+</body>
+</html>
